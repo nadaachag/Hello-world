@@ -45,3 +45,11 @@ void gauche(robot*info)
   robot->suivant= (robot->suivant -1)%D;
 }
 	
+void verifier(robot*info)
+{ int cercle , other ; //other : une autre forme
+  if(robot=other)
+   other=other;
+  elseif(robot=cercle)
+   gauche(robot*info);
+ }
+ 

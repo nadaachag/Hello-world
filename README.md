@@ -7,9 +7,6 @@ typedef struct robot
 {info*zone0;
  struct robot*suivant}*robot;
  
- 
- 
- 
 
 int Avance(robot*info, int z1 , int z2){
 	int D, i , j ; 

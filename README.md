@@ -1,11 +1,28 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include "robot.h"
 
+// pour le partie.h ////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdlbib.h>
+#ifndef robot_H
+#define robot_H
 
 
 typedef struct robot
-{info*zone0;
- struct robot*suivant}*robot;
+{
+    info*zero0;
+    struct robot*suivant;
+}robot;
+
+typedef struct cordonné
+{
+    float x; //ordonné
+    float y; //abcisse
+}cordonné;
+
+
+///////////////////////////////////////////////////////
  
 
 int Avance(robot*info, int z1 , int z2){
@@ -37,8 +54,8 @@ void Droite(robot*info)
 
 
 void gauche(robot*info)
-{ int D,zone0,zone1;
-  D=max(zone0,zone1);
+{ int D,zone0,zone2;
+  D=max(zone0,zone2);
   robot->suivant= (robot->suivant -1)%D;
 }
 	
